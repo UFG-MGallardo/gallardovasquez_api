@@ -12,6 +12,5 @@ class Zona extends Model
     protected $primatyKey = 'id';
     public $incrementing = true;
     public $timestamp = false;
-
     
 }

@@ -9,7 +9,7 @@ class ZonaController extends Controller
 {
     //
 
-    public function obtenerZonas(): \Iluminate\Http\JsonResponse { 
+    public function obtenerZonas(){ 
         $Zona = new Zona();
 
         $satisfactorio = false;
@@ -52,7 +52,7 @@ class ZonaController extends Controller
         return response()->json($respuesta,$estado);
     }
 
-    public function obtenerZona(int $idzona = 0): \Iluminate\Http\JsonResponse{
+    public function obtenerZona(int $idzona = 0){
 
         $satisfactorio = false;
         $estado = 0;
@@ -107,7 +107,7 @@ class ZonaController extends Controller
         return response()->json($respuesta,$estado);
     }
 
-    public function obtenerZonaPais(int $idpais = 0): \Iluminate\Http\JsonResponse{
+    public function obtenerZonaPais(int $idpais = 0){
 
         $satisfactorio = false;
         $estado = 0;
@@ -162,7 +162,7 @@ class ZonaController extends Controller
         return response()->json($respuesta,$estado);
     }
 
-    public function crearZona(Request $request): \Iluminate\Http\JsonResponse{ 
+    public function crearZona(Request $request){ 
         $satisfactorio = false;
         $estado = 0;
         $mensaje = "";
